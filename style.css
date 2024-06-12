@@ -83,6 +83,7 @@ body{
 
     .gallery{
         width: 100%;
+        grid-auto-rows: 200px;
     }
 
     .box{
