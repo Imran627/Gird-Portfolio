@@ -81,6 +81,14 @@ body{
         padding: 10px;
     }
 
+    nav{
+        position: sticky;
+        top: 0px;
+        border-radius: 0px;
+        text-align: center;
+
+    }
+
     .gallery{
         width: 100%;
         grid-auto-rows: 200px;
@@ -90,4 +98,100 @@ body{
         grid-row: span 1;
         grid-column: span 3;
     }
+}
+
+
+
+/* card container */
+
+nav a{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    text-decoration:none ;
+}
+nav{
+    background-color: rgb(36, 146, 144);
+    border-radius: 5px;
+    position: absolute;
+    top:50px;
+    left: 300px;
+    
+
+}
+
+:root{
+    --primary-text-color:#222;
+    --seconday-text-color:#444;
+    --card-background-color:#fff;
+    --background-color:#eee;
+    --margin:40px;
+    --card-bg-hover-color:#ddd;
+    --card-hover-text-color:#333;
+}
+
+.dark{
+    --primary-text-color:#fff;
+    --seconday-text-color:#ddd;
+    --card-background-color:#333;
+    --background-color:#111;
+    --card-bg-hover-color:#ddd;
+    --card-hover-text-color:#333;
+}
+
+.card-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+/* min-height: 100vh; */
+padding: 40px;
+background-color: var(--background-color);
+font-family:sans-serif;
+}
+
+.card-box {
+
+    width: 40%;
+    background-color: var(--card-background-color);
+    margin: 10px;
+    padding: var(--margin);
+    border-radius: 10px;
+    color: var(--primary-text-color);
+}
+
+.card-box:hover{
+    background-color: var(--card-bg-hover-color);
+    color: var(--card-hover-text-color);
+    
+}
+
+.card-container h1{
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+h2{
+    /* color: var(--primary-text-color); */
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:768px){
+
+    .card-container{
+        height: 200vh;
+    }
+    nav{
+        position: sticky;
+        top: 0px;
+        border-radius: 0px;
+        text-align: center;
+
+    }
+
+    .card-box{
+        width: 100%;
+    }
+
 }
